@@ -1,0 +1,156 @@
+/* Reset Default Margin & Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #e4e2e2;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Image */
+.logo-img {
+    width: 80px;
+    position: absolute;
+    top: 4rem;
+    right: 10rem;
+    border-radius: 10rem;
+}
+
+/* Center Header */
+.container {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* Heading Styles */
+.heading {
+    font-size: 5.4rem;
+    color: rgb(234, 223, 223);
+    letter-spacing: 0.2rem;
+    text-shadow: 0.1rem 0.1rem .2rem rgb(52, 187, 113);
+    position: relative;
+    left: -20rem;
+    top: -1rem;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: .3rem 0.3rem 0.3rem greenyellow;
+    transition: transform 0.3s ease-in-out;
+    width: 22rem;
+    margin: 0 auto 2rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Image */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #ff9800;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e68900;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed green;
+    border-width: 12px;
+    background-color: rgb(197, 179, 78);
+    border-radius: 0 2rem 10rem;
+    margin-bottom: 5rem;
+}
+
+.header-sec {
+    background-color: #212529;
+    padding: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #e68900;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .heading {
+        font-size: 4rem;
+        left: 0;
+        text-align: center;
+    }
+    .logo-img {
+        top: 2rem;
+        right: 2rem;
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .heading {
+        font-size: 3.5rem;
+    }
+    .logo-img {
+        width: 60px;
+    }
+    .text-center {
+        border-width: 8px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+        text-align: center;
+        position: relative;
+        left: 0;
+    }
+    .logo-img {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+    .text-center {
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+    .text-center {
+        border-width: 5px;
+    }
+    .card {
+        width: 100%;
+    }
+}
